@@ -4,9 +4,9 @@ A responsive web application for managing employee information with a clean, mod
 
 ## Links
 
-- **Git Repository**: [GitHub Repository](https://github.com/yourusername/employee-directory)
-- **Live Demo**: [Deployed Application](https://your-deployment-url.com)
-- **Demo Recording**: [Video Walkthrough](https://your-recording-link.com)
+- **Git Repository**: [GitHub Repository](https://github.com/1DS22CS116-Mallikarjun/Ajackus.git)
+- **Live Demo**: [Deployed Application](https://ajackus12.vercel.app/)
+- **Demo Recording**: [Video Walkthrough](https://drive.google.com/file/d/17_y7VXq1zb2elHVwWdrtNHFHjLTSoos9/view?usp=sharing)
 
 ## Features
 
