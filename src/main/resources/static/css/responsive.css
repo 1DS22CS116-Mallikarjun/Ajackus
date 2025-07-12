@@ -1,0 +1,579 @@
+/**
+ * Responsive Design Rules
+ * Mobile-first approach with breakpoints for different screen sizes
+ */
+
+/* Mobile First - Base styles are for mobile */
+
+/* Small Mobile (320px and up) */
+@media (min-width: 320px) {
+    .header__container {
+        padding: 0 var(--spacing-4);
+    }
+    
+    .main__container {
+        padding: 0 var(--spacing-4);
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: var(--spacing-3);
+        align-items: stretch;
+    }
+    
+    .controls__search {
+        min-width: auto;
+    }
+    
+    .controls__filters {
+        justify-content: space-between;
+    }
+    
+    .employee-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-3);
+        padding: var(--spacing-4);
+    }
+    
+    .employee-card {
+        padding: var(--spacing-3);
+    }
+    
+    .employee-card__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-2);
+    }
+    
+    .employee-card__actions {
+        flex-direction: column;
+        gap: var(--spacing-2);
+    }
+    
+    .employee-card__actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-3);
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        gap: var(--spacing-2);
+    }
+    
+    .form-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .modal__content {
+        margin: var(--spacing-4);
+        max-height: calc(100vh - 2rem);
+    }
+    
+    .modal__header {
+        padding: var(--spacing-4);
+    }
+    
+    .employee-form {
+        padding: var(--spacing-4);
+    }
+    
+    .filter-panel__filters {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-3);
+    }
+    
+    .filter-panel__actions {
+        flex-direction: column;
+        gap: var(--spacing-2);
+    }
+    
+    .filter-panel__actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .pagination__controls {
+        flex-wrap: wrap;
+        gap: var(--spacing-1);
+    }
+    
+    .pagination__btn {
+        min-width: 2rem;
+        height: 2rem;
+        font-size: var(--font-size-xs);
+    }
+    
+    .employee-section__header {
+        flex-direction: column;
+        gap: var(--spacing-3);
+        align-items: stretch;
+        padding: var(--spacing-3) var(--spacing-4);
+    }
+    
+    .employee-section__info {
+        flex-direction: column;
+        gap: var(--spacing-2);
+        align-items: flex-start;
+    }
+    
+    .pagination-controls {
+        justify-content: center;
+    }
+}
+
+/* Medium Mobile (480px and up) */
+@media (min-width: 480px) {
+    .employee-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: var(--spacing-4);
+        padding: var(--spacing-4);
+    }
+    
+    .employee-card__header {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0;
+    }
+    
+    .employee-card__actions {
+        flex-direction: row;
+        gap: var(--spacing-2);
+    }
+    
+    .employee-card__actions .btn {
+        width: auto;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-4);
+    }
+    
+    .form-actions {
+        flex-direction: row;
+        gap: var(--spacing-3);
+    }
+    
+    .form-actions .btn {
+        width: auto;
+    }
+    
+    .filter-panel__filters {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-4);
+    }
+    
+    .filter-panel__actions {
+        flex-direction: row;
+        gap: var(--spacing-3);
+    }
+    
+    .filter-panel__actions .btn {
+        width: auto;
+    }
+    
+    .employee-section__header {
+        flex-direction: row;
+        gap: 0;
+        align-items: center;
+        padding: var(--spacing-4) var(--spacing-4);
+    }
+    
+    .employee-section__info {
+        flex-direction: row;
+        gap: var(--spacing-4);
+        align-items: center;
+    }
+}
+
+/* Large Mobile (640px and up) */
+@media (min-width: 640px) {
+    .controls {
+        flex-direction: row;
+        gap: var(--spacing-4);
+        align-items: center;
+    }
+    
+    .controls__search {
+        min-width: 250px;
+    }
+    
+    .employee-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        padding: var(--spacing-5);
+    }
+    
+    .modal__content {
+        margin: var(--spacing-6);
+    }
+    
+    .modal__header {
+        padding: var(--spacing-5);
+    }
+    
+    .employee-form {
+        padding: var(--spacing-5);
+    }
+    
+    .filter-panel__content {
+        padding: var(--spacing-5);
+    }
+    
+    .employee-section__header {
+        padding: var(--spacing-4) var(--spacing-5);
+    }
+    
+    .pagination {
+        padding: var(--spacing-4) var(--spacing-5);
+    }
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+    .header__container {
+        padding: 0 var(--spacing-6);
+    }
+    
+    .main__container {
+        padding: 0 var(--spacing-6);
+    }
+    
+    .controls {
+        padding: var(--spacing-5);
+    }
+    
+    .employee-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: var(--spacing-5);
+        padding: var(--spacing-6);
+    }
+    
+    .employee-card {
+        padding: var(--spacing-4);
+    }
+    
+    .modal__content {
+        margin: var(--spacing-8);
+    }
+    
+    .modal__header {
+        padding: var(--spacing-6);
+    }
+    
+    .employee-form {
+        padding: var(--spacing-6);
+    }
+    
+    .filter-panel__content {
+        padding: var(--spacing-6);
+    }
+    
+    .employee-section__header {
+        padding: var(--spacing-4) var(--spacing-6);
+    }
+    
+    .pagination {
+        padding: var(--spacing-4) var(--spacing-6);
+    }
+    
+    /* Enhanced tablet features */
+    .employee-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .search-box--large {
+        max-width: 400px;
+    }
+}
+
+/* Small Desktop (1024px and up) */
+@media (min-width: 1024px) {
+    .employee-grid {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: var(--spacing-6);
+        padding: var(--spacing-6);
+    }
+    
+    .controls {
+        padding: var(--spacing-6);
+    }
+    
+    .search-box--large {
+        max-width: 500px;
+    }
+    
+    /* Enhanced desktop features */
+    .employee-card {
+        transition: all var(--transition-normal);
+    }
+    
+    .employee-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-xl);
+    }
+    
+    .btn:hover {
+        transform: translateY(-1px);
+        box-shadow: var(--shadow-md);
+    }
+    
+    .btn:active {
+        transform: translateY(0);
+    }
+}
+
+/* Large Desktop (1280px and up) */
+@media (min-width: 1280px) {
+    .employee-grid {
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+        gap: var(--spacing-6);
+    }
+    
+    .controls {
+        padding: var(--spacing-6);
+    }
+    
+    .search-box--large {
+        max-width: 600px;
+    }
+    
+    /* Enhanced large desktop features */
+    .employee-card {
+        padding: var(--spacing-5);
+    }
+    
+    .employee-card__name {
+        font-size: var(--font-size-xl);
+    }
+    
+    .employee-card__email,
+    .employee-card__department,
+    .employee-card__role {
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Extra Large Desktop (1536px and up) */
+@media (min-width: 1536px) {
+    .employee-grid {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: var(--spacing-8);
+        padding: var(--spacing-8);
+    }
+    
+    .controls {
+        padding: var(--spacing-8);
+    }
+    
+    .employee-section__header {
+        padding: var(--spacing-5) var(--spacing-8);
+    }
+    
+    .pagination {
+        padding: var(--spacing-5) var(--spacing-8);
+    }
+}
+
+/* Landscape Mobile Adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+    .modal__content {
+        max-height: 95vh;
+        margin: var(--spacing-2);
+    }
+    
+    .modal__header {
+        padding: var(--spacing-3) var(--spacing-4);
+    }
+    
+    .employee-form {
+        padding: var(--spacing-3) var(--spacing-4);
+    }
+    
+    .filter-panel__content {
+        padding: var(--spacing-3) var(--spacing-4);
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .btn__icon,
+    .employee-card__icon,
+    .search-box__icon {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .employee-card:hover {
+        transform: none;
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+}
+
+/* Dark Mode Support (if implemented) */
+@media (prefers-color-scheme: dark) {
+    /* Dark mode styles would go here */
+    /* This is a placeholder for future dark mode implementation */
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .controls,
+    .filter-panel,
+    .pagination,
+    .employee-card__actions,
+    .modal {
+        display: none !important;
+    }
+    
+    .main {
+        padding: 0;
+    }
+    
+    .main__container {
+        padding: 0;
+        max-width: none;
+    }
+    
+    .employee-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: var(--spacing-4);
+        padding: 0;
+    }
+    
+    .employee-card {
+        border: 1px solid var(--color-gray-300);
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    .employee-card__header {
+        border-bottom: 1px solid var(--color-gray-200);
+        padding-bottom: var(--spacing-2);
+        margin-bottom: var(--spacing-2);
+    }
+    
+    .employee-card__content {
+        margin-bottom: var(--spacing-2);
+    }
+    
+    .employee-card__info {
+        gap: var(--spacing-1);
+    }
+    
+    .employee-card__email,
+    .employee-card__department,
+    .employee-card__role {
+        font-size: var(--font-size-sm);
+    }
+}
+
+/* Accessibility Enhancements */
+@media (prefers-contrast: high) {
+    .btn {
+        border-width: 2px;
+    }
+    
+    .form-group__input,
+    .select,
+    .search-box__input {
+        border-width: 2px;
+    }
+    
+    .employee-card {
+        border-width: 2px;
+    }
+}
+
+/* Focus Visible for Keyboard Navigation */
+@media (any-hover: none) {
+    /* Touch devices */
+    .employee-card:hover {
+        transform: none;
+        box-shadow: var(--shadow-sm);
+    }
+    
+    .btn:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+/* Container Queries (Future Support) */
+@supports (container-type: inline-size) {
+    .employee-card {
+        container-type: inline-size;
+    }
+    
+    @container (max-width: 300px) {
+        .employee-card__header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: var(--spacing-2);
+        }
+        
+        .employee-card__actions {
+            flex-direction: column;
+            gap: var(--spacing-2);
+        }
+        
+        .employee-card__actions .btn {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+/* Custom Scrollbar for Webkit Browsers */
+@media (min-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: var(--color-gray-100);
+        border-radius: var(--radius-md);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: var(--color-gray-300);
+        border-radius: var(--radius-md);
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--color-gray-400);
+    }
+}
+
+/* Selection Styles */
+::selection {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+}
+
+::-moz-selection {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+} 
